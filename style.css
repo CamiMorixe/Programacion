@@ -1,11 +1,12 @@
 body{
     margin: 0px;
+    font-family: sans-serif;
 }
 div{
     padding: 20px
 }
 #main{
-    background-color: beige;
+    background-color: rgb(230, 220, 245);
 }
 nav{
     background-color: beige;
@@ -29,7 +30,6 @@ nav a:hover{
     color: brown;
 }
 
-
 nav img{
     display: flex;
         max-height: 50px;
@@ -39,9 +39,10 @@ nav img{
 .menuButton{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
