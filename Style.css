@@ -14,9 +14,17 @@ div{
 }
 
 nav{
-    background-color: rgb(236, 182, 138);
+    background-color: rgb(252, 219, 192);
     display: flex;
     flex-direction: row;
+}
+
+#video, h3{
+    text-align: left,
+}
+
+.videoacua{
+    text-align: left;
 }
 
 nav ul{
@@ -43,28 +51,17 @@ nav .img{
         width: auto;
 }
 
-#photos{
-    display: felx;
-    justify-content: center;
+.SobreNosotros{
+    background-color: aqua;
+
 }
 
-.pile1{
-    margin-right: 40px;
-    margin-left: 200px;
-}
-
-.pile2{
-    margin-right: 40px;
-}
-
-.pile3{
-    margin-right: 40px;
-}
 
 #videoacua{
     display: flex;
         max-width: 100%;
         height: auto;
+        margin-left: 150px;
 }
 
 .menuButton{
@@ -76,10 +73,16 @@ nav .img{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#SobreNosotros{
-    display: felx;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
+#SobreNosotros{ line-height: 1.9em;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #444444;
+    border: 1px dashed white;
+    background-color: #acd6dbcb;
+    padding: 25px;
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 .Nosotros{
@@ -100,6 +103,6 @@ nav .img{
     text-align: center;
 }
 
-#botones{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.redes{
+    text-align: right;
 }

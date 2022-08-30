@@ -3,51 +3,178 @@
   <head>
     <meta charset="utf-8">
     <title>Splash Fit</title>
-    <link rel="stylesheet" href="./Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <main>
 
     <div>
         <nav class="menuButton" id="menu">
-            <img src="./Assets/Img/Logo.png" alt="logo" width="50px">
+          <img src="./Assets/Img/logo.png" class="img-thumbnail" alt="logo" width="90px" span class="border border-1">
             <ul>
-              <li><a href="#menu">Inicio</a></li>
-              <li><a href="#SobreNosotros">Sobre nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Grilla de actividades</a></li>
-              <li><a href="#">Medio Ambiente</a></li>
-              <li><a href="#">Novedades</a></li>
+              <li><button type="button" class="btn btn-secondary">Inicio</button></li>
+              <li><a href="#Contacto"><button type="button" class="btn btn-secondary">Contacto</button></a></li>
+              <li><a href="#Grilla"><button type="button" class="btn btn-secondary">Grilla de actividades</button></a></li>
+              <li><button type="button" class="btn btn-secondary">Medio ambiente</button></li>
             </ul>
         </nav>
     </div>
 
-    <div id="photos">
-        <a href="https://splashfit.com.ar/"><img class="pile1" src="./Assets/Img/Pile.jpg" alt="img1" width="200px"></a>
-        <img class="pile2" src="./Assets/Img/Pile2.jpg" alt="img2" width="200px">
-        <img class="pile3" src="./Assets/Img/pile3.jpg" alt="img3" width="200px">
-        <img class="pile4" src="./Assets/Img/pile4.jpg" alt="img4" width="200px">
-    </div>
-
-    <section>
-      <div id="video">
-        <h1 class="primer_titulo">Nuestro Lugar</h1>
-        <video id="videoacua" src="./Assets/video/AcuaGym.mp4" autoplay muted loop width="500px" height="500px" type="video/mp4"> Tu navegador no admite el elemento <code>video</code>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/Img/Nosotros.jpg" class="d-block w-100" alt="Nosotros" height="450px" width="400px">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Img/Sonrisas.jpg" class="d-block w-100" alt="Sonrisas" height="450px" width="400px">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Img/Enseñando.jpg" class="d-block w-100" alt="Enseñando" height="450px" width="400px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </section> 
-    <div id="SobreNosotros">
-      <h3>Sobre Nosotros</h3>
-      <p>
-        El ejercicio físico requiere disciplina. Practicarlo con regularidad y a la intensidad adecuada es la única manera de conseguir beneficios. Cambiar la intensidad y buscar ejercicios más exigentes hará que tu organismo se adapte y siga mejorando. Convertir la actividad física en algo divertido ayudará a que cueste menos practicarla, además de tener multitud de beneficios, no sólo a nivel de mejora física, sino a nivel social (relaciones con amigos o compañeros con los que puedes practicar deporte) y emocional (te costará practicarlo, pero te sentirás mejor).
-      </p>
+
+    <p id="SobreNosotros">
+      El ejercicio físico requiere disciplina. Practicarlo con regularidad y a la intensidad adecuada es la única manera de conseguir beneficios. Cambiar la intensidad y buscar ejercicios más exigentes hará que tu organismo se adapte y siga mejorando. Convertir la actividad física en algo divertido ayudará a que cueste menos practicarla, además de tener multitud de beneficios, no sólo a nivel de mejora física, sino a nivel social (relaciones con amigos o compañeros con los que puedes practicar deporte) y emocional (te costará practicarlo, pero te sentirás mejor).
+    </p>
+
+    <div id="Grilla">
+      <h3>Grilla de Actividades</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Actividades</th>
+            <th scope="col">Horarios</th>
+            <th scope="col">Profesor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Zumba</th>
+            <td>18hs a 19hs</td>
+            <td>Vichy</td>
+          </tr>
+          <tr>
+            <th scope="row">Salsa</th>
+            <td>21hs a 22hs</td>
+            <td>Carla</td>
+          </tr>
+          <tr>
+            <th scope="row">Karate</th>
+            <td>15hs a 16:30hs</td>
+            <td>Pablo</td>
+          </tr>
+          <tr>
+            <th scope="row">Pilates</th>
+            <td>10hs a 11:30hs</td>
+            <td>Paio</td>
+            <tr>
+              <th scope="row">Funcional</th>
+              <td>8:30hs a 10hs</td>
+              <td>Gabi</td>
+            </tr>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    <br>
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p> Cambia tu estilo de vida </p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Aca, en <cite title="Source Title">Splash Fit</cite>
+      </figcaption>
+    </figure>
+
+  <section>
+      <div id="video">
+        <video id="videoacua" src="./Assets/video/videoacua.mp4" autoplay muted loop width="1000px" height="1000px" type="video/mp4"> Tu navegador no admite el elemento <code>video</code> 
+        </video>
+      </div>
+    </section>
+
+      <br>
+      <br>
+      <br>
+
+      <div id="Contacto">
+        <p><strong>Complete con sus datos, en la brevedad estaremos en contacto</strong></p>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Provincia</label>
+            <select id="inputState" class="form-select">
+              <option selected>Río Negro</option>
+              <option>Entre Ríos</option>
+              <option>Nequén</option>
+              <option>Chubut</option>
+              <option>Tierra del Fuego</option>
+              <option>Jujuy</option>
+              <option>Salta</option>
+              <option>Formosa</option>
+              <option>Misiones</option>
+              <option>Corrientes</option>
+              <option>Chaco</option>
+              <option>Tucumán</option>
+              <option>San Juan</option>
+              <option>La Rioja</option>
+              <option>Catamarca</option>
+              <option>Santiago del Estero</option>
+              <option>Santa Fe</option>
+              <option>Córdoba</option>
+              <option>San Luis</option>
+              <option>Mendoza</option>
+              <option>La Pampa</option>
+              <option>Buenos aires</option>
+              <option>Santa Cruz</option>
+            </select>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                No soy un robot
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Registrarme</button>
+          </div>
+        </form>
+        </div>
+
+    
+    <div class="redes">
+      <a href="https://www.instagram.com/splashfit/"><img src="./Assets/Img/insta.webp" alt="Instagram" width="50px"></a>
+      <a href="https://www.facebook.com/splashfitbariloche/posts/1092313361189659/"><img src="./Assets/Img/face.png" alt="Facebook" width="35px"></a>
     </div>
 
-    <div id="botones">
-      <h3 class="inicio">Encontranos en</h3>
-      <img src="./Assets/Img/Mail_(iOS).svg.png" alt="Mail" width="50px">
-      <a href="https://www.instagram.com/splashfit/"><img src="./Assets/Img/Instagram-Icon.png" alt="Instagram" width="50px"></a>
-      <a href="https://www.facebook.com/splashfitbariloche/posts/1092313361189659/"><img src="/Assets/Img/fb_icon_325x325.png" alt="Facebook" width="100px"></a>
-    </div>
     </main>
   </body>
 </html>     
