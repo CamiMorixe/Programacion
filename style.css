@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     margin-left: 20px;
     margin-right: 20px;
-    background-image: url(./Assets/Img/fotogym2.jpg);
+    background-image: url(./Assets/Img/fotoFONDO.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,10 +10,6 @@ body{
 
 div{
     padding: 5px;
-}
-
-.barra{
-    margin-right: auto;
 }
 
 
@@ -72,21 +68,6 @@ nav .img{
     margin: 30px;
     background-repeat: no-repeat;
     background-position: top left;
-}
-
-.Nosotros{
-    align-content: center;
-}
-
-.primer_titulo{
-    font-family: fantasy;
-}
-
-
-.inicio{
-    display: felx;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
 }
 
 
