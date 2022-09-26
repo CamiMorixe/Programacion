@@ -2,25 +2,22 @@ body{
     font-family: sans-serif;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: beige
+    background-image: url(./Assets/Img/fotogym2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 div{
-    padding: 10px;
+    padding: 5px;
 }
 
-#main{
-    background-color: none;
-}
 
 nav{
     display: flex;
     flex-direction: row;
 }
 
-#video, h3{
-    text-align: left,
-}
 
 .videoacua{
     text-align: left;
@@ -37,12 +34,9 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-nav a:hover{
-    color: rgba(42, 147, 165, 0.404);
-}
 
 nav .img{
     display: flex;
@@ -51,7 +45,7 @@ nav .img{
 }
 
 .SobreNosotros{
-    background-color: aqua;
+    background-color: rgb(0, 47, 255);
 
 }
 
@@ -61,6 +55,7 @@ nav .img{
         max-width: 100%;
         height: auto;
         margin-left: 150px;
+        margin: auto;
 }
 
 .menuButton{
@@ -92,9 +87,6 @@ nav .img{
     font-family: fantasy;
 }
 
-.contenedor{
-    background-color: blue;
-}
 
 .inicio{
     display: felx;
@@ -102,6 +94,42 @@ nav .img{
     text-align: center;
 }
 
-.redes{
-    text-align: right;
+
+footer{
+    background-color: black;
+    padding-top: 800px;
+    padding-bottom: 100px;
+}
+
+.container-portada{
+    width: 100%;
+    height: 400px;
+    background-image: url(./Assets/Img/Imagen\ Nadador.jpg);
+    background-size: 100%;
+    animation: movimiento 10s infinite linear alternate;
+    position: relative
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+
+    }to{
+        background-position: top right;
+
+    }
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
 }

@@ -3,190 +3,239 @@
   <head>
     <meta charset="utf-8">
     <title>Splash Fit</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
-  <body>
+  <body background="./Assets/Img/logo.png">
     <main>
+
       <section id="botones del principio">
-        <div class="conteiner" style="background-color: beige;">
+        <div class="conteiner-fluid" style="background-color: grey;">
           <div class="col-xl-6 col-md-6" style="position: center;">
             <div>
               <nav class="menuButton" id="menu">
                 <img src="./Assets/Img/logo.png" width="100px">
-                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btncheck1"><a href="index.html">Inicio</a></label>
-                
-                  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btncheck2"><a href="#Grilla">Grilla de Actividades</a></label>
-                
-                  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btncheck3"><a href="Medio_ambiente.html">Medio Ambiente</a></label>
+
+                  <li class="nav-item">
+                  <a href="index.html">Inicio</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                  <a href="#Grilla">Grilla de Actividades</a>
+                  </li>
+                  
+                  <!--Dropdown-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+                      Medio Ambiente
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Medio_ambiente.html">Eficiencia Energética</a></li>
+                    </ul>
                 </div>
               </nav>
           </div>
           </div>
         </div>
-
       </section>
 
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Assets/Img/Nosotros.jpg" class="d-block w-100" alt="Nosotros" height="450px" width="400px">
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Img/Sonrisas.jpg" class="d-block w-100" alt="Sonrisas" height="450px" width="400px">
-          </div>
-          <div class="carousel-item">
-            <img src="./Assets/Img/Enseñando.jpg" class="d-block w-100" alt="Enseñando" height="450px" width="400px">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <!-- Carrousel -->
+      
 
-    <p id="SobreNosotros">
-      El ejercicio físico requiere disciplina. Practicarlo con regularidad y a la intensidad adecuada es la única manera de conseguir beneficios. Cambiar la intensidad y buscar ejercicios más exigentes hará que tu organismo se adapte y siga mejorando. Convertir la actividad física en algo divertido ayudará a que cueste menos practicarla, además de tener multitud de beneficios, no sólo a nivel de mejora física, sino a nivel social (relaciones con amigos o compañeros con los que puedes practicar deporte) y emocional (te costará practicarlo, pero te sentirás mejor).
-    </p>
-
-    <div id="Grilla">
-      <h3>Grilla de Actividades</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Actividades</th>
-            <th scope="col">Horarios</th>
-            <th scope="col">Profesor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Zumba</th>
-            <td>18hs a 19hs</td>
-            <td>Vichy</td>
-          </tr>
-          <tr>
-            <th scope="row">Salsa</th>
-            <td>21hs a 22hs</td>
-            <td>Carla</td>
-          </tr>
-          <tr>
-            <th scope="row">Karate</th>
-            <td>15hs a 16:30hs</td>
-            <td>Pablo</td>
-          </tr>
-          <tr>
-            <th scope="row">Pilates</th>
-            <td>10hs a 11:30hs</td>
-            <td>Paio</td>
-            <tr>
-              <th scope="row">Funcional</th>
-              <td>8:30hs a 10hs</td>
-              <td>Gabi</td>
-            </tr>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-    <br>
-
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p> Cambia tu estilo de vida </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        Aca, en <cite title="Source Title">Splash Fit</cite>
-      </figcaption>
-    </figure>
-
-  <section>
-      <div id="video">
-        <video id="videoacua" src="./Assets/video/videoacua.mp4" autoplay muted loop width="1000px" height="1000px" type="video/mp4"> Tu navegador no admite el elemento <code>video</code> 
-        </video>
-      </div>
-    </section>
-
-      <br>
-      <br>
-      <br>
-
-      <div id="Contacto">
-        <p><strong>Complete con sus datos, en la brevedad estaremos en contacto</strong></p>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="inputAddress">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Provincia</label>
-            <select id="inputState" class="form-select">
-              <option selected>Río Negro</option>
-              <option>Entre Ríos</option>
-              <option>Nequén</option>
-              <option>Chubut</option>
-              <option>Tierra del Fuego</option>
-              <option>Jujuy</option>
-              <option>Salta</option>
-              <option>Formosa</option>
-              <option>Misiones</option>
-              <option>Corrientes</option>
-              <option>Chaco</option>
-              <option>Tucumán</option>
-              <option>San Juan</option>
-              <option>La Rioja</option>
-              <option>Catamarca</option>
-              <option>Santiago del Estero</option>
-              <option>Santa Fe</option>
-              <option>Córdoba</option>
-              <option>San Luis</option>
-              <option>Mendoza</option>
-              <option>La Pampa</option>
-              <option>Buenos aires</option>
-              <option>Santa Cruz</option>
-            </select>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                No soy un robot
-              </label>
+      <section id="carrousel">
+        <div class="container-fluid" style="background-color: beige;">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Assets/Img/fotogym.jpg" class="d-block w-100" alt="Nosotros" height="650px" width="400px" style="background-size: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/Img/Sonrisas.jpg" class="d-block w-100" alt="Sonrisas" height="650px" width="400px" style="background-size: 100%;">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/Img/fotoBici.jpg" class="d-block w-100" alt="Enseñando" height="650px" width="400px" style="background-size: 100%">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/Img/Enseñando.jpg" class="d-block w-100" alt="Enseñando" height="650px" width="400px" style="background-size: 100%">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Registrarme</button>
-          </div>
-        </form>
         </div>
+      </section>
 
-    
-    <div class="redes">
-      <a href="https://www.instagram.com/splashfit/"><img src="./Assets/Img/insta.webp" alt="Instagram" width="50px"></a>
-      <a href="https://www.facebook.com/splashfitbariloche/posts/1092313361189659/"><img src="./Assets/Img/face.png" alt="Facebook" width="35px"></a>
-    </div>
+      <section id="SobreNosotros">
+        <p>
+          <strong>Somos un centro deportivo donde promovemos mejorar la calidad de vida de las personas a través de la actividad física, entretenimiento y de hábitos saludables. En Splash Fit te acercamos a un nuevo estilo de vida.</strong>
+        </p>
+      </section>
 
+
+      <!-- Grilla -->
+      <section id="Grilla">
+        <div class="container-fluid" style="background-color: beige;">
+          <div>
+            <h3>Grilla de Actividades</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Actividades</th>
+                  <th scope="col">Horarios</th>
+                  <th scope="col">Profesor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Zumba</th>
+                  <td>18hs a 19hs</td>
+                  <td>Vichy</td>
+                </tr>
+                <tr>
+                  <th scope="row">Salsa</th>
+                  <td>21hs a 22hs</td>
+                  <td>Carla</td>
+                </tr>
+                <tr>
+                  <th scope="row">Karate</th>
+                  <td>15hs a 16:30hs</td>
+                  <td>Pablo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pilates</th>
+                  <td>10hs a 11:30hs</td>
+                  <td>Paio</td>
+                  <tr>
+                    <th scope="row">Funcional</th>
+                    <td>8:30hs a 10hs</td>
+                    <td>Gabi</td>
+                  </tr>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          <br>
+        </div>
+      </section>
+
+      <section id="Video">
+        <div class="container-fluid" style="background-color: beige;">
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p> Cambia tu estilo de vida </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Aca, en <cite title="Source Title">Splash Fit</cite>
+            </figcaption>
+          </figure>
+          <div id="video">
+            <video id="videoacua" src="./Assets/video/videoacua.mp4" autoplay muted loop width="1000px" height="1000px" type="video/mp4"> Tu navegador no admite el elemento <code>video</code> 
+            </video>
+          </div>
+        </div>
+      </section>
+
+     <!-- Contacto --> 
+      <section id="Contacto">
+        <div class="container-fluid" style="background-color: beige;">
+          <div id="Contacto">
+            <p><strong>Complete con sus datos, en la brevedad estaremos en contacto</strong></p>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Provincia</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Río Negro</option>
+                  <option>Entre Ríos</option>
+                  <option>Nequén</option>
+                  <option>Chubut</option>
+                  <option>Tierra del Fuego</option>
+                  <option>Jujuy</option>
+                  <option>Salta</option>
+                  <option>Formosa</option>
+                  <option>Misiones</option>
+                  <option>Corrientes</option>
+                  <option>Chaco</option>
+                  <option>Tucumán</option>
+                  <option>San Juan</option>
+                  <option>La Rioja</option>
+                  <option>Catamarca</option>
+                  <option>Santiago del Estero</option>
+                  <option>Santa Fe</option>
+                  <option>Córdoba</option>
+                  <option>San Luis</option>
+                  <option>Mendoza</option>
+                  <option>La Pampa</option>
+                  <option>Buenos aires</option>
+                  <option>Santa Cruz</option>
+                </select>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    No soy un robot
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+            </div>    
+        </div>
+      </section>
+
+
+      <!-- Footer -->
+      <footer id="footer" class="container-fluid py-5">
+        <div class="container-fluid">
+        
+            <div class="row text-white">
+              <div class="col-2">
+                <h5>MENU</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                  <li class="nav-item mb-2"><a href="#Contacto" class="nav-link p-0 text-muted">Contacto</a></li>
+                  <li class="nav-item mb-2"><a href="#SobreNosotros" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h5>CONTACTANOS</h5>
+                <ul class="nav flex-column ">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">info@splashfit.com.ar</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+54 2944924649</a></li>
+                  <li class="nav-item mb-2"><a href="https://www.facebook.com/splashfitbariloche/" class="nav-link p-0 text-muted">Facebook</a></li>
+                  <li class="nav-item mb-2"><a href="https://www.instagram.com/splashfit/" class="nav-link p-0 text-muted">Instagram</a></li>
+                </ul>
+              </div>
+              </section>
+            </div>
+        </div>
+      </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>     
